@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/c571f6245a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+            <h1>Fitness</h1>
+            <nav>
+                <ul id="mySidebar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <i class="fa-solid fa-xmark close-btn" onclick="w3_close()"></i>
+                </ul>
+                <i class="fa-solid fa-bars open-btn" onclick="w3_open()"></i>
+            </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-first">
+                <h1>Get body in <br> <span class="shape">shape</span> & stay <br> healthy</h1>
+                <p>A huge selection of health and fitness content, healthy recipes <br> and transformation stories to help you get fit and stay fit!</p>
+                <div class="cta-buttons">
+                    <button><a href="#">Join Club Now!</a></button>
+                    <button><a href="#">Download App</a></button>
+                </div>
+            </div>            
+            <div class="container">
+                <img src="/assets/images2.png" alt="Person with dumbbell" class="background-image">
+                <div class="overlay top-right">
+                    <h2>500+</h2>
+                    <p>Free Workout Videos</p>
+                </div>
+                <div class="overlay bottom-left">
+                    <span class="bullet"></span>
+                    <div>
+                        <h2>350+</h2>
+                        <p>Video tutorial</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habits">
+            <div class="des-habits">
+                <h1>Change Your Habits</h1>
+                <p>We believe fitness should be accessible to <br> everyone, everywhere, regardless of income <br> or access to a gym.</p>
+            </div>
+            <div class="teams">
+                <div>
+                    <img src="/assets/image3.png" alt="movement" srcset="">
+                    <div>
+                        <h3>Movement</h3>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/assets/image2.png" alt="movement" srcset="">
+                    <div>
+                        <h3>Time</h3>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/assets/image4.png" alt="movement" srcset="">
+                    <div>
+                        <h3>Practice</h3>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+                </div>      
+                <div>
+                    <img src="/assets/image5.png" alt="movement" srcset="">
+                    <div>
+                        <h3>Weight Loss </h3>
+                        <p>We believe fitness should be accessible to everyone</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="run">
+                <div>
+                    <h2>Run an Extra 
+                      <br>  Mile Easily</h2>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                    <button>Join Now</button>
+                </div>
+                <div>
+                    <img src="/assets/run.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <div class="hero">
+        <h1>Get body in shape & stay healthy</h1>
+        <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+        <div class="cta-buttons">
+            <a href="#">Join Club Now!</a>
+            <a href="#">Download App</a>
+        </div>
+        <p>350+ Video tutorials | 500+ Free Workout Videos</p>
+    </div> -->
+
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>
