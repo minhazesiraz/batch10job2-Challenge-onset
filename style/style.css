@@ -167,6 +167,67 @@ nav ul li:hover {
     margin-bottom: 40px;
 }
 
+#run {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* max-width: 900px; */
+    margin: 50px auto;
+}
+
+.run-margin {
+    margin: 10px;
+}
+
+#run .content {
+    max-width: 60%;
+}
+
+#run .image-container {
+    max-width: 40%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#run .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+} 
+
+#run h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+#run p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#run button {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#run button:hover {
+    background-color: #e04848; 
+}
+
+
+
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
     #mySidebar {
@@ -227,6 +288,20 @@ nav ul li:hover {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    #run {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #run .content, 
+    #run .image-container {
+        max-width: 100%;
+    }
+
+    #run .image-container {
+        margin-top: 20px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
@@ -240,6 +315,10 @@ nav ul li:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+  
+    
+
     
 }
 
@@ -259,9 +338,5 @@ nav ul li:hover {
         gap: 20px;
     }
 
-    #run {
-        display: grid;
-        /* grid-template-columns: auto; */
-        grid-template-rows: auto;
-    }
+     
 }
