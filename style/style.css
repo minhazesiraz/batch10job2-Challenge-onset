@@ -427,6 +427,161 @@ button:hover {
     background-color: #e04848;
 }
 
+/* Team Section Styling */
+#team {
+    text-align: center;
+    color: #fff;
+    background-color: #000; /* Dark background */
+    padding: 40px;
+}
+
+#team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#team p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Team Container */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* Team Member Styling */
+.team-member {
+    position: relative;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-bottom: 5px solid rgba(0, 0, 0, 0.5); */
+}
+
+.member-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+    /* border-radius: 5px; */
+    text-align: left;
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.member-info p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+}
+
+/* Hover Effect */
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section Styling */
+#footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    max-width: 350px;
+    margin-right: 20px;
+}
+
+.footer-logo h2 {
+    color: #ff6347; /* Tomato color for the logo text */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.link-column {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.link-column h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-column ul li {
+    margin-bottom: 8px;
+}
+
+.link-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.link-column ul li a:hover {
+    color: #ff6347; /* Change to tomato color on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
 
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
@@ -511,6 +666,22 @@ button:hover {
     .bmi-chart, 
     .bmi-form {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .link-column {
         margin-bottom: 20px;
     }
 }
