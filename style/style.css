@@ -240,6 +240,7 @@ nav ul li:hover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   padding: 10px;
+  /* gap: 5px; */
 }
 
 .item1 {
@@ -274,6 +275,7 @@ nav ul li:hover {
     text-align: center;
     padding: 20px;
     font-size: 30px;
+    border: 1px solid red;
   }
 
 .grid-item {
